@@ -15,6 +15,8 @@ body {
     grid-template-columns: 33vw 1fr;
 }
 
+/** SIDE PANEL **/
+
 .sidepanel {
     background: url("yousef-espanioly-gW5z3UFAsvM-unsplash.jpg") no-repeat;
     background-size: cover;
@@ -29,54 +31,6 @@ body {
     border-right: 2px solid #234141;
     box-shadow: 2px 0px 15px 2px #424A5A;
     z-index: 2;
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 20px 25% 15px 30px;
-    height: 100%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: calc(0.8vh + 0.8vw);
-    grid-row: 1 / 2;
-    grid-column: 2;
-    background-color: #E2EEE4;
-    line-height: 20px;
-}
-
-.submissionform {
-    height: 100%;
-    grid-row: 2;
-    grid-column: 2;
-    background-color: #F3F7F3;
-    padding: 20px 25% 15px 30px;
-    gap: 20px;
-    box-shadow: 5px 5px 10px 2px #424A5A;
-    position: relative;
-}
-
-fieldset {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-fieldset .div {
-    justify-content: center;
-}
-
-.submissionform legend {
-    font-size: calc(0.8vh + 0.8vw);
-}
-
-.createacc {
-    height: 34vh;
-    grid-row: 3;
-    grid-column: 2;
-    background-color: #E2EEE4;
 }
 
 .credit {
@@ -116,6 +70,123 @@ fieldset .div {
     filter: invert(100%);
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 25% 15px 30px;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: calc(0.8vh + 0.8vw);
+    grid-row: 1 / 2;
+    grid-column: 2;
+    background-color: #E2EEE4;
+    line-height: 4vh;
+}
+
+
+/** FORM **/
+
+.submissionform {
+    height: 100%;
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #F3F7F3;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 5px 5px 10px 2px #424A5A;
+    position: relative;
+}
+
+form, fieldset {
+    height: fit-content;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 10px;
+    width: 75%;
+    gap: 0.7vh
+}
+
+fieldset div {
+    padding: 0px 3vw;
+    font-size: calc(0.75vh + 0.75vw);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quattrocento', serif;
+    gap: 0.3vh;
+    letter-spacing: 0.2vw;
+}
+
+fieldset div:last-child, fieldset div:nth-child(6){
+    font-weight: 800;
+}
+
+input {
+    font-size: calc(0.75vh + 0.75vw);
+    font-family: 'Quattrocento', serif;
+    border: 1px solid #234141;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid red;
+    box-shadow: 2px 2px 10px #204140;
+}
+
+.submissionform legend {
+    font-size: calc(0.8vh + 0.8vw);
+    font-family: 'Merriweather', serif;
+}
+
+
+/** Create Account **/
+
+.createacc {
+    height: 34vh;
+    grid-row: 3;
+    grid-column: 2;
+    background-color: #E2EEE4;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: calc(0.65vh + 0.65vw);
+}
+
+.createacc a {
+    color: rgba(156,146,180);
+    text-shadow: 0px 0px 1px black;
+}
+
+button {
+    background-color: #54A17A;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #204140;
+    box-shadow: 2px 2px 5px  #424A5A;
+    font-size: calc(0.75vh + 0.75vw);
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+button:hover {
+    background-color: #94C292;
+}
+
+button:active {
+    background-color: #94C292;
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow: none;
+    margin-bottom: 0px;
+}
 
 /** Media Queries **/
 
@@ -133,7 +204,7 @@ fieldset .div {
     }
 
     .logo {
-        width: 100vh; 
+        width: 100vw; 
         margin-top: 10vh;
     }
 
@@ -143,6 +214,11 @@ fieldset .div {
 
     .intro {
         padding: 40px 20px 20px;
+        font-size: calc(1vh + 1vw);
+        line-height: 5vh;
+    }
+
+    .submissionform {
         font-size: calc(1vh + 1vw);
     }
 
