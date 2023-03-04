@@ -48,26 +48,30 @@
 
                     <div>
                         <label for="phone">Phone Number:</label>
-                        <input required type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
                     </div>
 
                     <div>
                         <label for="password">Password:</label>
-                        <input required type="password" id="password" name="password">
+                        <input required type="password" id="password" name="password" minlength="5">
+                        <span id="passRules"></span>
                     </div>
 
                     <div>
                         <label for="confirmpw">Confirm Password:</label>
-                        <input required type="password" id="confirmpw">
+                        <input required type="password" id="confirmpw" minlength="5">
+                        <span id="missmatch"></span>
                     </div>
 
                 </fieldset>
             </form>
         </div>
         <div class="createacc">
-            <button form="form" type="submit">Create Account</button>
-            <span>Already have an account? <a href="">Log in</a>.</span>          
+            <button form="form" type="submit" id="submit">Create Account</button>
+            <span>Already have an account? <a href="">Log in</a>.</span>   
+            <a class="icon" href="https://github.com/BunnehHewd"><img class="icon" src="github-mark.svg"></a>      
         </div>
     </div>
+<script src="apps.js"></script>
 </body>
 </html>
