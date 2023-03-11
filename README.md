@@ -9,4 +9,5 @@ Featured in this project is form and password validation. As an extra challenge,
 
 [Click here for a live preview](https://bunnehhewd.github.io/Sign-upForm/)
 
+(gitsign.png)
 
