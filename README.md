@@ -11,3 +11,9 @@ Featured in this project is form and password validation. As an extra challenge,
 
 ![Screenshot](gitsign.png)
 
+## Built With
+
+*HTML
+*CSS
+*JavaScript
+
