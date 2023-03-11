@@ -13,7 +13,7 @@ Featured in this project is form and password validation. As an extra challenge,
 
 ## Built With
 
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
 
